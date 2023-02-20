@@ -25,12 +25,13 @@ addItem(e) {
     };
  
     this.setState((prevState) => {
-      this.props.suggestions.push(newItem.text)
       return { 
         items: prevState.items.concat(newItem) ,
       };
     });
-   
+    
+    this.props.suggestions.push(newItem.text);
+
     this._inputElement.value = "";
   }
      
@@ -110,7 +111,7 @@ addItem(e) {
     if (showSuggestions && userInput) {
         if (filteredSuggestions.length) {
           suggestionsListComponent = (
-            <ul class="suggestions">
+            <ul className="suggestions">
               {filteredSuggestions.map((suggestion, index) => {
                 let className;
       
@@ -128,7 +129,7 @@ addItem(e) {
           );
         } else {
           suggestionsListComponent = (
-            <div class="no-suggestions">
+            <div className="no-suggestions">
               <em>No suggestions available</em>
             </div>
           );
