@@ -1,0 +1,111 @@
+body {
+  padding: 50px;
+  background-color: #6d5379;
+  font-family: sans-serif;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+ input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(42, 8, 61), rgb(127, 92, 148) -3px 3px 10px, 3px -3px 10px;
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+  width: 100px;
+  margin: 10px;
+  margin-right: 0px;
+  border-radius: 5px;
+  background-color: #180827;
+  color: #FFF;
+  border: 2px solid #090111;
+  
+}
+button:hover {
+  background-color: #422563;
+  border: 2px solid #2d1944;
+  cursor: pointer;
+    box-shadow: 3px 3px 10px rgb(12, 0, 19), rgb(16, 13, 19) -3px 3px 10px, 3px -3px 10px;
+}
+.ListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: 320px;
+} 
+.ListMain .theList li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  box-shadow: 5px 5px 10px
+}
+ul.theList {
+  padding: 0;
+}
+.theList li:hover{
+  background-color: rgb(214, 168, 202);
+  cursor: pointer;
+}
+.no-suggestions {
+  color: rgb(36, 4, 44);
+  padding: 0.5rem;
+}
+
+.suggestions {
+  
+  background-color: #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(310px + 1rem);
+  border-radius: 5px;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: rgba(255,255,255,.5);
+  color: #1f0b36;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 5px;
+}
